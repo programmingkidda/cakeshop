@@ -1,0 +1,230 @@
+<html>
+<head>
+<style>
+
+.activde, .link ul li:hover
+{
+border:1px solid white;
+background-color:pink;
+}
+
+.input[type=text], select, textarea 
+{
+  width: 70%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 5px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+ 
+.sab{
+margin-left:5px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:30%;
+  margin-top:50px;
+  margin-left:500px;
+}
+.page
+{
+width:fit;
+height:1230px;
+border-style:groove;
+}
+
+.link
+{
+width:fit;
+height:55px;
+margin-top:5px;
+position:absolute;
+}
+
+.page ul{
+list-style:none;
+}
+
+.page ul li{
+width:150px;
+border:1px solid white;
+height:50px;
+line-height:50px;
+background-color:black;
+text-align:center;
+font-size:20;
+color:white;
+float:left;
+margin-top:5px;
+margin-left:70px;
+position:relative;
+}
+.link a
+{
+color:white;
+text-decoration:none;
+}
+
+.link a:hover
+{
+background-color:pink;
+}
+
+.body
+{
+width:fit;
+height:930px;
+
+margin-top:90px;
+border-style:groove;
+}
+
+.image
+{
+width:1000px;
+height:600px;
+border-style:groove;
+display:inline-block;
+}
+
+.info
+{
+width:900px;
+height:900px;
+
+display:inline-block;
+margin-top:5px;
+}
+
+.page ul ul
+{
+display:none;
+}
+
+
+.page ul  li:hover  > ul
+{
+display:block;
+}
+
+
+.page ul ul
+{
+display:none;
+}
+
+
+.page ul  li:hover  > ul
+{
+display:block;
+}
+
+.page ul ul
+{
+display:none;
+}
+
+.page ul  li:hover  > ul
+{
+display:block;
+}
+
+
+.page ul ul ul
+{
+display:none;
+}
+.page ul ul
+{
+display:none
+}
+
+.page ul ul li:hover  > ul
+{
+display:block;
+}
+
+
+.page ul li ul li:hover > ul
+{
+display-inline-block;
+margin-left:90px;
+float:left;
+}
+
+.page ul li ul li ul li:hover > ul
+{
+display-inline-block;
+margin-left:90px;
+float:left;
+}
+
+</style>
+</head>
+<body>
+<div class="page">
+	<center>
+	<img border=1 src="He.png">
+	</center>
+	<div class="link">
+	<ul>
+	<li><a href="Home.html">Home</a>&nbsp
+	<li><a href="Flavours.html">Flavours</a>&nbsp
+	<li><a href="Occasional Cakes.html">Occasional Cakes</a>&nbsp
+<ul>
+<li><a href=""A.html>Anniversary </a>&nbsp
+<li><a href=""V.html>Valentines day </a>&nbsp
+<li><a href=""W.html>Womens day </a>&nbsp
+<li><a href=""M.html>Mothers day </a>&nbsp
+<li><a href=""F.html>Fathers day </a>&nbsp
+<li><a href=""R.html>Rathi Celebration </a>&nbsp
+<li><a href=""fd.html>Friendship day </a>&nbsp
+</ul>
+	<li><a href="Contact us.html">Contact us</a>&nbsp
+	<li><a href="About us.html">About us</a>&nbsp
+	<li><a href="Feedback.html">Feedback</a>&nbsp
+	</div>
+<div class="body">    
+<center>
+<h1> Feedback Form</h1>
+</center>
+<div class="container">
+  <form action="action_page.php">
+
+    <p> First Name
+    <input type="text" name="firstname" placeholder="Your name..">&nbsp<br><br><br>
+
+    Last Name
+    <input type="text" name="lastname" placeholder="Your last name.."> </p><br>
+    
+    Address
+    <input type="text" name="lastname" placeholder="Your Address."> </p><br>
+    
+     Enter Area
+    <select id="Area" name="area">
+      <option value="Donoli">Donoli</option>
+      <option value="Bambwade">Bambwade</option>
+      <option value="KhutalWadi">KhutalWadi</option>
+      <option value="Thergaon">Thergaon</option>
+    <option value="Boriwade">Boriwade</option>
+    </select>
+<p> Write Something</p>
+   <textarea id="subject" placeholder="Write something.." style="height:20px width:fit">
+    </textarea>
+    
+<div class="sab">
+    <input type="submit" name="sab" value="SEND">
+    <input type="reset" name="reset" value="RESET">
+   </div> 
+
+  </form>
+</div>
+</div>
+</body>
+</html>
